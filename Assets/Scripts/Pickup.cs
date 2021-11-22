@@ -6,15 +6,20 @@ public class Pickup : MonoBehaviour
 {
     public Transform pickup;
     public Transform start;
+    public float startY;
     public Transform end;
+    public float endY;
 
-    bool isReversing = false;
+    public bool isReversing = false;
 
     public float speed = 0.1f;
 
     void Start()
     {
         pickup.position = start.position;
+        startY = start.position.y;
+        endY = end.position.y;
+        Debug.Log(Vector3.Distance(start.position, end.position));
     }
     
     void FixedUpdate()
@@ -23,7 +28,7 @@ public class Pickup : MonoBehaviour
         {
             pickup.position = Vector3.MoveTowards(pickup.position, end.position, speed);
 
-            if (transform.position == end.position)
+            if (pickup.position == end.position)
             {
                 isReversing = true;
             }

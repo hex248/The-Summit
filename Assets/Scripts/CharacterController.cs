@@ -13,6 +13,8 @@ public class CharacterController : MonoBehaviour
     GameObject cam;
     Rigidbody myRB;
 
+    public GameObject mesh;
+
 
     bool isOnGround;
     public GameObject groundCheck;
@@ -38,7 +40,12 @@ public class CharacterController : MonoBehaviour
         }
 
         Vector3 newVelocity = (transform.forward * Input.GetAxis("Vertical") * maxSpeed) + (transform.right * Input.GetAxis("Horizontal") * maxSpeed);
+        if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
+        {
+            mesh.transform.rotation = transform.rotation;
+        }
         myRB.velocity = new Vector3(newVelocity.x, myRB.velocity.y, newVelocity.z);
+        mesh.transform.position = transform.position;
 
         rotation = rotation + Input.GetAxis("Mouse X") * rotationSpeed;
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
