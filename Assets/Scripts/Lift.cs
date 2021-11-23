@@ -4,27 +4,43 @@ using UnityEngine;
 
 public class Lift : MonoBehaviour
 {
-    public bool moving;
+    public bool lifting;
+    public bool falling;
     public GameObject obj;
     public Transform start;
     public Transform end;
-    public float speed = 0.1f;
-
-    // Start is called before the first frame update
+    public float liftSpeed = 0.05f;
+    public float fallSpeed = 0.3f;
+    
     void Start()
     {
-        moving = false;
-        obj.transform.position = start.position;
-        obj.transform.rotation = start.rotation;
+        lifting = false;
+        falling = false;
+        obj.transform.position = end.position;
+        obj.transform.rotation = end.rotation;
     }
-
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
-        if (moving)
+        if (lifting)
         {
-            obj.transform.position = Vector3.MoveTowards(obj.transform.position, end.position, speed);
-            obj.transform.rotation = Quaternion.Slerp(obj.transform.rotation, end.rotation, speed);
+            obj.transform.position = Vector3.MoveTowards(obj.transform.position, end.position, liftSpeed);
+            obj.transform.rotation = Quaternion.Slerp(obj.transform.rotation, end.rotation, liftSpeed);
+
+            if (obj.transform.position == end.position && obj.transform.rotation == end.rotation)
+            {
+                lifting = false;
+            }
+        }
+        else if (falling)
+        {
+            obj.transform.position = Vector3.MoveTowards(obj.transform.position, start.position, fallSpeed);
+            obj.transform.rotation = Quaternion.Slerp(obj.transform.rotation, start.rotation, fallSpeed);
+
+            if (obj.transform.position == start.position && obj.transform.rotation == start.rotation)
+            {
+                falling = false;
+            }
         }
     }
 
@@ -32,12 +48,15 @@ public class Lift : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKey(KeyCode.E) && !moving)
+            if (Input.GetKey(KeyCode.E) && !falling && !lifting)
             {
-                // move
-                moving = true;
-                Debug.Log("a");
+                lifting = true;
             }
         }
+    }
+
+    public void Fall()
+    {
+        falling = true;
     }
 }
