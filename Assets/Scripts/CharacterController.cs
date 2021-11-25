@@ -23,6 +23,8 @@ public class CharacterController : MonoBehaviour
 
     public int score = 0;
 
+    public Animator animator;
+
     void Start()
     {
         cam = GameObject.Find("Main Camera");
@@ -33,9 +35,11 @@ public class CharacterController : MonoBehaviour
     void Update()
     {
         isOnGround = Physics.CheckSphere(groundCheck.transform.position, 0.1f, groundLayer);
-        
+        animator.SetBool("isOnGround", isOnGround);
+
         if (isOnGround && Input.GetKeyDown(KeyCode.Space))
         {
+            animator.SetTrigger("jumped");
             myRB.AddForce(transform.up * jumpForce);
         }
 
@@ -45,6 +49,7 @@ public class CharacterController : MonoBehaviour
             mesh.transform.rotation = transform.rotation;
         }
         myRB.velocity = new Vector3(newVelocity.x, myRB.velocity.y, newVelocity.z);
+        animator.SetFloat("speed", newVelocity.magnitude);
         mesh.transform.position = transform.position;
 
         rotation = rotation + Input.GetAxis("Mouse X") * rotationSpeed;

@@ -19,7 +19,6 @@ public class Pickup : MonoBehaviour
         pickup.position = start.position;
         startY = start.position.y;
         endY = end.position.y;
-        Debug.Log(Vector3.Distance(start.position, end.position));
     }
     
     void FixedUpdate()
