@@ -51,15 +51,6 @@ public class CharacterController : MonoBehaviour
         myRB.velocity = new Vector3(newVelocity.x, myRB.velocity.y, newVelocity.z);
         animator.SetFloat("speed", newVelocity.magnitude);
         mesh.transform.position = transform.position;
-
-        rotation = rotation + Input.GetAxis("Mouse X") * rotationSpeed;
-        transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
-
-        camRotation = camRotation + Input.GetAxis("Mouse Y") * camRotationSpeed;
-
-        camRotation = Mathf.Clamp(camRotation, -40.0f, 40.0f);
-
-        cam.transform.localRotation = Quaternion.Euler(new Vector3(-camRotation, 0.0f, 0.0f));
     }
 
     void OnTriggerEnter(Collider col)

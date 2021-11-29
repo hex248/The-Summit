@@ -11,6 +11,8 @@ public class Rock : MonoBehaviour
     public bool moved;
     public float moveSpeed = 0.3f;
 
+    public GameObject parentMound;
+
     void Start()
     {
         moving = false;
@@ -42,6 +44,7 @@ public class Rock : MonoBehaviour
             if (Input.GetKey(KeyCode.E) && !moving && !moved)
             {
                 moving = true;
+                parentMound.GetComponent<BoxCollider>().enabled = false;
             }
         }
     }
