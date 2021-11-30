@@ -5,29 +5,29 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637737858314651911
-    m_Hash: 4174367254
+      ticks: 637738818264780553
+    m_Hash: 3975472927
   m_LockFileStatus:
     m_FilePath: D:/3D Platformer/repo/The-Summit/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637737858492816847
-    m_Hash: 3432645746
+      ticks: 637738819305250552
+    m_Hash: 1544932961
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: D:/3D Platformer/repo/The-Summit/Packages
-m_EditorVersion: 2021.2.2f1 (5e2b1e92c7f8)
+m_EditorVersion: 2021.2.4f1 (99ba6aa4c552)
 m_ResolvedPackages:
-- packageId: com.unity.collab-proxy@1.13.5
+- packageId: com.unity.collab-proxy@1.15.1
   testable: 0
   isDirectDependency: 1
-  version: 1.13.5
+  version: 1.15.1
   source: 1
-  resolvedPath: D:\3D Platformer\repo\The-Summit\Library\PackageCache\com.unity.collab-proxy@1.13.5
+  resolvedPath: D:\3D Platformer\repo\The-Summit\Library\PackageCache\com.unity.collab-proxy@1.15.1
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -45,10 +45,10 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 1.13.5
+    - 1.15.1
     compatible:
-    - 1.13.5
-    verified: 1.13.5
+    - 1.15.1
+    verified: 1.15.1
   dependencies:
   - name: com.unity.nuget.newtonsoft-json
     version: 2.0.0
@@ -82,7 +82,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -91,10 +90,10 @@ m_ResolvedPackages:
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 4001806dc89b25276d1382d5abffd71731b030e5
+    revision: 44478cbd3117b13beac17ff868e64d0aed5c4071
     path: 
   unityLifecycle:
-    version: 1.13.5
+    version: 1.15.1
     nextVersion: 
 - packageId: com.unity.ide.rider@3.0.7
   testable: 0
@@ -136,7 +135,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -196,7 +194,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -246,7 +243,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -308,7 +304,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -388,7 +383,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -458,7 +452,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -521,7 +514,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -570,7 +562,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -618,7 +609,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -667,7 +657,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -716,7 +705,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -765,7 +753,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -818,7 +805,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -875,7 +861,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -925,7 +910,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -974,7 +958,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1023,7 +1006,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1072,7 +1054,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1121,7 +1102,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1170,7 +1150,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1223,7 +1202,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1272,7 +1250,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1329,7 +1306,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1381,7 +1357,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1430,7 +1405,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1495,7 +1469,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1544,7 +1517,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1601,7 +1573,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1650,7 +1621,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1707,7 +1677,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1764,7 +1733,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1821,7 +1789,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1894,7 +1861,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1947,7 +1913,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2008,7 +1973,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2071,7 +2035,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2120,7 +2083,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2181,7 +2143,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2234,7 +2195,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2294,7 +2254,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2346,7 +2305,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2403,7 +2361,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2459,7 +2416,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
