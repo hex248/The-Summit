@@ -6,11 +6,10 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText;
     public CharacterController player;
     
     void Update()
     {
-        scoreText.text = $"Score: {player.score}";
+
     }
 }
