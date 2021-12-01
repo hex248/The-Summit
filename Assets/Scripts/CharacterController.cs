@@ -25,11 +25,15 @@ public class CharacterController : MonoBehaviour
 
     public Animator animator;
 
+    AudioSource sfxSource;
+
     void Start()
     {
         cam = GameObject.Find("Main Camera");
         myRB = GetComponent<Rigidbody>();
         score = 0;
+
+        sfxSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -51,6 +55,13 @@ public class CharacterController : MonoBehaviour
         myRB.velocity = new Vector3(newVelocity.x, myRB.velocity.y, newVelocity.z);
         animator.SetFloat("speed", newVelocity.magnitude);
         mesh.transform.position = transform.position;
+
+        if ((myRB.velocity.magnitude > 1.0f) && (!sfxSource.isPlaying))
+        {
+            sfxSource.volume = Random.Range(0.8f, 1.0f);
+            sfxSource.pitch = Random.Range(0.8f, 1.1f);
+            sfxSource.Play();
+        }
     }
 
     void OnTriggerEnter(Collider col)

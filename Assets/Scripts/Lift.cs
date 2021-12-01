@@ -11,6 +11,8 @@ public class Lift : MonoBehaviour
     public Transform end;
     public float liftSpeed = 0.05f;
     public float fallSpeed = 0.3f;
+
+    public BoxCollider blocker;
     
     void Start()
     {
@@ -30,6 +32,7 @@ public class Lift : MonoBehaviour
             if (obj.transform.position == end.position && obj.transform.rotation == end.rotation)
             {
                 lifting = false;
+                blocker.isTrigger = true;
             }
         }
         else if (falling)
@@ -40,6 +43,7 @@ public class Lift : MonoBehaviour
             if (obj.transform.position == start.position && obj.transform.rotation == start.rotation)
             {
                 falling = false;
+                blocker.isTrigger = false;
             }
         }
     }
