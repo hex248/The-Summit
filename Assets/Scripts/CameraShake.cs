@@ -4,17 +4,28 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-    bool shaking = false;
+    public bool shaking = false;
+    public float interval = 0.0f;
+    public float timeElapsed = 0.0f;
+
+    void Update() {
+        timeElapsed += Time.deltaTime;
+    }
 
     private void FixedUpdate()
     {
+        if (interval == 0.0f) {
+            interval = Random.Range(0.8f, 1.5f);
+        }
 
-
-        Debug.Log(shaking);
-        if (Input.GetKeyDown(KeyCode.F) && !shaking)
+        if (timeElapsed >= interval && !shaking)
         {
             shaking = true;
-            StartCoroutine(Shake(Random.Range(0.15f, 1.3f), Random.Range(0.05f, 0.1f)));
+            StartCoroutine(Shake(Random.Range(0.15f, 1.3f), Random.Range(0.03f, 0.1f)));
+        }
+        if (timeElapsed >= interval) {
+            interval = Random.Range(0.8f, 1.5f);
+            timeElapsed = 0.0f;
         }
     }
 
@@ -33,7 +44,7 @@ public class CameraShake : MonoBehaviour
             transform.localPosition = new Vector3(x, y, originalPosition.z);
 
             timeElapsed += Time.deltaTime;
-            if (timeElapsed == duration)
+            if (timeElapsed >= duration)
             {
                 shaking = false;
             }
